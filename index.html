@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="es">
+<head>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KX76XF8R');</script>
+<!-- End Google Tag Manager -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Seguridad informática</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Vulnerabilidades, ataques y defensas en el software, la web, las redes y los sistemas: modelo de amenazas, errores de memoria y su explotación, inyección, autenticación, privilegios, cadena de suministro, *fuzzing* y respuesta a incidentes.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=JetBrains+Mono:wght@400;600&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400;1,8..60,600&display=swap">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KX76XF8R"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<div class="wrap" data-page="index">
+<header class="topbar"><a class="brand" href="index.html">Seguridad <b>informática</b></a><span class="eyebrow">Curso visual e interactivo · Computación</span><a class="al-sitio" href="https://aaramirez.github.io/">← Todos los cursos</a></header>
+<div class="layout">
+<nav class="toc" id="toc" aria-label="Ruta de aprendizaje"></nav>
+<main>
+
+<header class="hero">
+  <span class="eyebrow">Curso visual e interactivo · Computación</span>
+  <h1>Ataca una tienda que es tuya para aprender a defender todas las demás</h1>
+  <p class="lede">Casi todos los ataques famosos explotan unas pocas clases de error: un búfer que se desborda, un dato que se vuelve código, un permiso de más, una dependencia en la que se confió. Este curso explica cada clase por dentro, la explota en un laboratorio propio y construye la defensa que la cierra, desde la pila del procesador hasta el registro que delata al intruso.</p>
+</header>
+
+<section>
+  <h2>Cómo usar este curso</h2>
+  <div class="prose">
+    <p><b>Estado.</b> El curso está en preparación. La <a href="temario.html">tabla de contenido</a> ya tiene los 14 capítulos con sus secciones y sus laboratorios, y está en revisión.</p>
+    <p><b>Para quién es.</b> Estudiantes de computación y desarrolladores que ya programan y conocen lo básico de redes y de sistemas operativos. C se lee, no hace falta escribirlo con soltura. La pila y el montículo están en Rust y en Arquitectura del computador; TCP/IP, en Redes de computadoras; la matemática del cifrado, en Criptografía.</p>
+    <p><b>Cómo está hecho.</b> Una tienda en línea vulnerable a propósito recorre el curso: corre entera en el navegador o en tu computador, con su servidor, su base de datos y un binario en C para los errores de memoria. Cada capítulo abre una falla, la explota en el laboratorio y la cierra. Las prácticas se hacen solo sobre esa tienda, sobre aplicaciones vulnerables que corren en tu máquina (OWASP Juice Shop, DVWA) y sobre retos públicos hechos para practicar (picoCTF, OverTheWire, PortSwigger Web Security Academy, pwn.college). Nunca sobre sistemas de terceros.</p>
+  </div>
+</section>
+
+<details class="stage" id="temario" open><summary><h2><span class="pn">Empieza aquí</span> Tabla de contenido</h2></summary>
+  <div class="mods">
+    <a class="mod" href="temario.html"><span class="n">≡</span><b>Tabla de contenido</b><p>Cada capítulo con sus secciones y sus laboratorios.</p></a>
+  </div>
+</details>
+
+<details class="stage" id="parte-1" open><summary><h2><span class="pn">Parte 1</span> Pensar como atacante</h2><span class="cuenta" data-etapa-cuenta="1"></span></summary>
+  <div class="mods">
+    <div class="mod soon" data-id="que-es-la-seguridad"><span class="n">01</span><b>Qué es la seguridad informática y las reglas del juego</b><p>Confidencialidad, integridad y disponibilidad, la diferencia entre falla, amenaza y riesgo, y por qué solo se ataca lo que es tuyo.</p></div>
+    <div class="mod soon" data-id="modelo-de-amenazas"><span class="n">02</span><b>Modelo de amenazas: qué proteger y de quién</b><p>Diagramas de flujo de datos, fronteras de confianza, STRIDE y árboles de ataque aplicados a la tienda.</p></div>
+  </div>
+</details>
+
+<details class="stage" id="parte-2" open><summary><h2><span class="pn">Parte 2</span> El software por dentro</h2><span class="cuenta" data-etapa-cuenta="2"></span></summary>
+  <div class="mods">
+    <div class="mod soon" data-id="errores-de-memoria"><span class="n">03</span><b>Errores de memoria: desbordamientos, uso tras liberar y compañía</b><p>Por qué C y C++ dejan escribir donde no se debe y las clases de error que eso produce.</p></div>
+    <div class="mod soon" data-id="explotacion"><span class="n">04</span><b>De la falla al control: explotación</b><p>Shellcode, *return-to-libc* y programación orientada al retorno (ROP), paso a paso sobre la pila.</p></div>
+    <div class="mod soon" data-id="defensas-del-sistema"><span class="n">05</span><b>Defensas del sistema: canarios, ASLR, NX y lenguajes seguros</b><p>Las mitigaciones que el compilador, el sistema operativo y el procesador ponen entre la falla y el exploit.</p></div>
+    <div class="mod soon" data-id="analisis-y-fuzzing"><span class="n">06</span><b>Encontrar fallas: análisis de código, sanitizadores y *fuzzing*</b><p>Cómo se encuentran las vulnerabilidades antes que el atacante, de la revisión manual al *fuzzing* guiado por cobertura.</p></div>
+  </div>
+</details>
+
+<details class="stage" id="parte-3" open><summary><h2><span class="pn">Parte 3</span> La web y la identidad</h2><span class="cuenta" data-etapa-cuenta="3"></span></summary>
+  <div class="mods">
+    <div class="mod soon" data-id="inyeccion-y-web"><span class="n">07</span><b>Ataques web: inyección, XSS, CSRF y SSRF desde el lado del atacante</b><p>La raíz común de los ataques web, explotada en la tienda: mezclar datos con código.</p></div>
+    <div class="mod soon" data-id="autenticacion-y-sesiones"><span class="n">08</span><b>Atacar la autenticación y las sesiones</b><p>Contraseñas robadas, sesiones secuestradas, *phishing* y lo que de verdad los frena.</p></div>
+  </div>
+</details>
+
+<details class="stage" id="parte-4" open><summary><h2><span class="pn">Parte 4</span> Redes y sistemas</h2><span class="cuenta" data-etapa-cuenta="4"></span></summary>
+  <div class="mods">
+    <div class="mod soon" data-id="seguridad-de-redes"><span class="n">09</span><b>Seguridad de redes: escuchar, suplantar y filtrar</b><p>Ataques en la red local y en Internet, y las defensas por capas: segmentación, cortafuegos, detección y túneles cifrados.</p></div>
+    <div class="mod soon" data-id="privilegios-y-aislamiento"><span class="n">10</span><b>Privilegios y aislamiento: control de acceso, escalada y *sandbox*</b><p>Quién puede hacer qué en un sistema, cómo el atacante consigue más y cómo se encierra lo que puede fallar.</p></div>
+    <div class="mod soon" data-id="cadena-de-suministro"><span class="n">11</span><b>Ataques a la cadena de suministro</b><p>Cuando el atacante no entra por tu código sino por el de alguien en quien confías.</p></div>
+  </div>
+</details>
+
+<details class="stage" id="parte-5" open><summary><h2><span class="pn">Parte 5</span> Operar y construir seguro</h2><span class="cuenta" data-etapa-cuenta="5"></span></summary>
+  <div class="mods">
+    <div class="mod soon" data-id="deteccion-y-respuesta"><span class="n">12</span><b>Detección y respuesta a incidentes</b><p>Registros que sirven, detecciones que no ahogan en alertas y el ciclo de respuesta cuando el ataque ya ocurrió.</p></div>
+    <div class="mod soon" data-id="prompts-seguridad-produccion"><span class="n">13</span><b>Prompts para generar código seguro en producción</b><p>Qué pedirle a un asistente de IA para que el código que genera valide, autorice, registre y aguante un ataque, y no sea una demo.</p></div>
+    <div class="mod soon" data-id="proyecto-auditar-la-tienda"><span class="n">14</span><b>Proyecto final: auditar y blindar la tienda</b><p>Una prueba de penetración completa sobre la tienda, con su informe y las correcciones.</p></div>
+  </div>
+</details>
+
+
+
+<nav class="pager" id="pager" aria-label="Capítulo anterior y siguiente"></nav>
+</main>
+</div>
+<footer><span>Curso abierto de aaramirez.github.io.</span><span>Sitio publicado: <a href="https://github.com/aaramirez/seguridad-informatica" target="_blank" rel="noopener">github.com/aaramirez/seguridad-informatica</a></span></footer>
+</div>
+<script src="assets/lab.js"></script>
+</body>
+</html>
